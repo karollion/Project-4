@@ -1,6 +1,11 @@
 /* Variables */
 
 $color-main: #fed136;
+$color-two: #f7f7f7;
+
+$color-text-dark: #222222;
+$color-text-medium: #777777;
+$color-text-light: #ffffff;
 
 /* Global*/
 
@@ -14,7 +19,7 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 950px;
     height: 100%;
     padding: 0;
     margin: 0 auto;
@@ -49,6 +54,7 @@ header {
     
     .logo {
         font-size: 18px;
+        color: $color-main;
     }
     
     ul {
@@ -87,7 +93,17 @@ header {
 
 /* services */
 
+.services {
+    a {
+        color: $color-main;
+    }
+}
+
 /* portfolio */
+
+.portfolio {
+    background: $color-two;
+}
 
 .image01 {
     background: url('.../images/image01.png') no-repeat center center;
