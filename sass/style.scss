@@ -1,3 +1,7 @@
+/* Variables */
+
+$color-main: #fed136;
+
 /* Global*/
 
 *, *::before, *::after {
@@ -36,8 +40,6 @@ header {
     background: url('.../images/header.jpg') no-repeat;
     background-position: center center;
     background-size: cover;
-    
-    
 }
     
 .navigation {
@@ -81,4 +83,13 @@ header {
     a {
         margin: 0 auto;
     }
+}
+
+/* services */
+
+/* portfolio */
+
+.image01 {
+    background: url('.../images/image01.png') no-repeat center center;
+    background-size: cover;
 }
