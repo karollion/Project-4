@@ -94,8 +94,12 @@ header {
 /* services */
 
 .services {
-    a {
+    i {
+        font-size: 38px;
         color: $color-main;
+    }
+    a {
+        font-size: 0;
     }
 }
 
@@ -106,6 +110,46 @@ header {
 }
 
 .image01 {
-    background: url('.../images/image01.png') no-repeat center center;
+    background: url('file:///D:/kodilla/projekt4 studio/images/image01.png') no-repeat center center;
     background-size: cover;
+}
+
+/* Footer */
+
+.footer {
+    position: relative;
+    margin: 40px 0;
+
+    .footer-icons {
+        list-style-type: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        color: $color-text-medium;
+    }
+
+    li {
+        font-size: 0;
+    }
+    
+    .fa-brands {
+        line-height: 39px;
+    }
+
+    i {
+        font-size: 18px;
+        width: 39px;
+        height: 39px;
+        color: $color-text-light;
+        background: $color-text-dark;
+        border-radius: 50%;
+        text-align: center;
+    }
 }
