@@ -21,6 +21,9 @@ $color-text-light: #ffffff;
 body {
     margin: 0;
     padding: 0;
+    color: $color-text-medium;
+    font-family: $font-text;
+    font-size: 14px;
 }
 
 .container {
@@ -34,7 +37,6 @@ body {
 .center {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -55,6 +57,22 @@ a {
     font-weight: 700;
     text-align: center;
     line-height: 65px;
+}
+
+.section-title {
+    line-height: 30px;
+    font-size: 40px;
+    color: $color-text-dark;
+    text-transform: uppercase;
+    font-family: $font-header;
+    padding: 0;
+    margin: 120px auto 0 auto;
+}
+
+.section-subtitle {
+    padding: 0;
+    margin: 19px auto 77px auto;
+    font-size: 16px;
 }
 
 /* Header */
@@ -135,9 +153,27 @@ header {
 /* services */
 
 .services {
+    height: 602px;
+
+    .margin {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .col p {
+        text-align: center;
+        margin: 0;
+    }
+
     i {
+        width: 70px;
+        height: 70px;
+        line-height: 64px;
+        text-align: center;
         font-size: 38px;
         color: $color-main;
+        border: $color-main 3px solid;
+        border-radius: 50%;
     }
     a {
         font-size: 0;
@@ -147,6 +183,7 @@ header {
 /* portfolio */
 
 .portfolio {
+    height: 1555px;
     background: $color-two;
 }
 
