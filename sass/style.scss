@@ -31,7 +31,6 @@ body {
     height: 100%;
     padding: 0;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 .center {
@@ -183,13 +182,71 @@ header {
 /* portfolio */
 
 .portfolio {
-    height: 1555px;
     background: $color-two;
+    padding-bottom: 70px;
+    
+    .row {
+        margin-bottom: 50px;
+    }
+
+    .col {
+        width: 290px;
+        height: 393px;
+        flex-wrap: wrap;
+    }
+
+    .image-info {
+        background: $color-text-light;
+        padding: 30px;
+        margin: 0;
+        text-align: center;
+    }
+
+    h3 {
+        margin: 0;
+        font-family: $font-header;
+        color: $color-text-dark;
+    }
+
+    .col p {
+        margin: 5px 0 0 0;
+    }
 }
 
 .image01 {
     background: url("../images/image01.png") no-repeat center center;
     background-size: cover;
+    height: 300px;
+}
+
+.image02 {
+    background: url("../images/image02.png") no-repeat center center;
+    background-size: cover;
+    height: 300px;
+}
+
+.image03 {
+    background: url("../images/image03.png") no-repeat center center;
+    background-size: cover;
+    height: 300px;
+}
+
+.image04 {
+    background: url("../images/image04.png") no-repeat center center;
+    background-size: cover;
+    height: 300px;
+}
+
+.image05 {
+    background: url("../images/image05.png") no-repeat center center;
+    background-size: cover;
+    height: 300px;
+}
+
+.image06 {
+    background: url("../images/image06.png") no-repeat center center;
+    background-size: cover;
+    height: 300px;
 }
 
 /* Footer */
@@ -225,6 +282,7 @@ header {
         font-size: 18px;
         width: 39px;
         height: 39px;
+        margin: 0 3px;
         color: $color-text-light;
         background: $color-text-dark;
         border-radius: 50%;
