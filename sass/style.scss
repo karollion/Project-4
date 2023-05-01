@@ -1,7 +1,7 @@
 /* Variables */
 $font-logo: 'Great Vibes', cursive;
-$font-header:  'Montserrat', sans-serif;
-$font-text:   'Playfair Display', serif;
+$font-header: 'Montserrat', sans-serif;
+$font-text: 'Playfair Display', serif;
 
 $color-main: #fed136;
 $color-two: #f7f7f7;
@@ -12,8 +12,10 @@ $color-text-light: #ffffff;
 
 /* Global*/
 
-*, *::before, *::after {
-	box-sizing: border-box;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
 body {
@@ -41,12 +43,18 @@ a {
 }
 
 .btn {
-    margin: 0 auto;
-    font-size: 18px;
+    height: 65px;
+    width: 240px;
+    margin: 60px auto 0;
     color: $color-text-light;
+    background: $color-main;
+    border-radius: 5px;
     text-transform: uppercase;
+    font-size: 18px;
     font-family: $font-header;
     font-weight: 700;
+    text-align: center;
+    line-height: 65px;
 }
 
 /* Header */
@@ -54,36 +62,48 @@ a {
 header {
     width: 100%;
     height: 100vh;
-    background: url('../images/header.jpg') no-repeat;
+    background: url("../images/header.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
+
+    .darker {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background: rgba($color: #000000, $alpha: 0.5);
+    }
 }
-    
+
 .navigation {
     background: none;
     width: 100%;
-    border: 1px solid red;
-    
+    margin-top: 44px;
+
     .logo {
         font-size: 26px;
         color: $color-main;
         font-family: $font-logo;
+        line-height: 30px;
     }
-    
-    a{
+
+    a {
         color: $color-text-light;
         font-family: $font-header;
         font-size: 14px;
+        line-height: 30px;
     }
 
     ul {
         float: right;
         list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
-    
+
     li {
         display: inline-block;
-        margin-left: 10px; 
+        margin-left: 36px;
         text-transform: uppercase;
     }
 }
@@ -93,16 +113,16 @@ header {
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    border: 1px solid red;
     color: $color-text-light;
-    
+    padding-bottom: 150px;
+
     h1 {
-        margin: 0 auto;
+        margin: 20px auto 0;
         font-size: 75px;
         font-family: $font-header;
         text-transform: uppercase;
     }
-    
+
     h2 {
         margin: 0 auto;
         font-size: 40px;
@@ -131,7 +151,7 @@ header {
 }
 
 .image01 {
-    background: url('../images/image01.png') no-repeat center center;
+    background: url("../images/image01.png") no-repeat center center;
     background-size: cover;
 }
 
@@ -159,7 +179,7 @@ header {
     li {
         font-size: 0;
     }
-    
+
     .fa-brands {
         line-height: 39px;
     }
