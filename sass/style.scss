@@ -152,16 +152,12 @@ header {
 /* services */
 
 .services {
-    height: 602px;
-
-    .margin {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
+    padding-bottom: 68px;
 
     .col p {
         text-align: center;
         margin: 0;
+        padding-bottom: 50px;
     }
 
     i {
@@ -184,15 +180,12 @@ header {
 .portfolio {
     background: $color-two;
     padding-bottom: 70px;
-    
-    .row {
-        margin-bottom: 50px;
-    }
 
     .col {
         width: 290px;
         height: 393px;
         flex-wrap: wrap;
+        margin-bottom: 50px;
     }
 
     .image-info {
@@ -287,5 +280,35 @@ header {
         background: $color-text-dark;
         border-radius: 50%;
         text-align: center;
+    }
+}
+
+/* Media */
+
+@media (max-width: 767px) {
+
+    .row {
+        flex-direction: column;
+    }
+
+    .splash-inner {
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 28px;
+        }
+    }
+
+    .navigation li {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    
+    .footer p {
+        display: block;
+        text-align: center;
+        padding-top: 70px;
+        margin-bottom: 0;
     }
 }
